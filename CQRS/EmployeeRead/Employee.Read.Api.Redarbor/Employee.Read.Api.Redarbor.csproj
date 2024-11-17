@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Employee.Read.Application.Redarbor\Employee.Read.Application.Redarbor.csproj" />
+    <ProjectReference Include="..\Employee.Read.Domain.Redarbor\Employee.Read.Domain.Redarbor.csproj" />
+    <ProjectReference Include="..\Employee.Read.Infraestruture.Redarbor\Employee.Read.Infraestruture.Redarbor.csproj" />
+  </ItemGroup>
+
+</Project>

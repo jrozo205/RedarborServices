@@ -1,0 +1,18 @@
+SELECT [Id]
+      ,[CompanyId]
+      ,[Email]
+      ,[Fax]
+      ,[Name]
+      ,[Lastlogin]
+      ,[Password]
+      ,[PortalId]
+      ,[RoleId]
+      ,[StatusId]
+      ,[Telephone]
+      ,[Username]
+      ,[UpdatedOn]
+      ,[CreatedOn]
+      ,[DeletedOn]
+  FROM [RedarborDB].[dbo].[Employee]
+  WHERE [Id] = @id
+  AND StatusId <> 5
